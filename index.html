@@ -38,31 +38,26 @@
 </head>
 <body class="bg-gray-100 font-sans text-gray-800 min-h-screen py-6 px-3 flex flex-col items-center">
 
-  <!-- Main Card Container -->
   <div class="w-full max-w-xl bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
     
-    <!-- Top Gradient Accent -->
     <div class="gold-accent-line"></div>
 
-    <!-- Header Hero Banner -->
-    <header class="relative bg-amber-50 px-6 py-8 text-center flex flex-col items-center justify-center border-b border-brand-goldBorder">
+    <header class="relative px-6 py-8 text-center flex flex-col items-center justify-center border-b border-brand-goldBorder bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(255, 253, 245, 0.82), rgba(255, 253, 245, 0.82)), url('tutoring-header.png');">
       <img 
         src="https://drive.google.com/thumbnail?id=1dn4jp6zvWGfJ9BCwM0bSdXydaGDGf0PM&sz=w1000" 
         alt="New Mt. Moriah Missionary Baptist Church" 
-        class="w-full max-w-xs h-auto object-contain mb-3"
+        class="w-full max-w-xs h-auto object-contain mb-3 relative z-10"
       >
-      <h1 class="text-xl md:text-2xl font-serif font-bold text-brand-dark tracking-wide mt-1">
+      <h1 class="text-xl md:text-2xl font-serif font-bold text-brand-dark tracking-wide mt-1 relative z-10">
         Youth Academic Tutoring Sign-Up
       </h1>
-      <p class="text-xs md:text-sm text-gray-600 max-w-md mt-2 leading-relaxed">
+      <p class="text-xs md:text-sm text-gray-700 max-w-md mt-2 leading-relaxed font-medium relative z-10">
         Empowering our youth to excel academically. Please complete the form below to register one or more students or volunteer as a tutor.
       </p>
     </header>
 
-    <!-- Form Content -->
     <form id="tutoringForm" class="p-6 md:p-8 space-y-7">
       
-      <!-- Role Selection -->
       <div>
         <label class="block text-xs font-bold font-serif text-brand-crimson tracking-wider uppercase mb-3">
           I am registering as a: *
@@ -80,7 +75,6 @@
         </div>
       </div>
 
-      <!-- Parent/Guardian Section -->
       <div id="contactSection" class="space-y-4">
         <h2 class="text-sm font-serif font-bold text-brand-dark flex items-center gap-2 border-b border-gray-100 pb-2">
           <span class="text-brand-gold text-lg">•</span> Parent / Guardian Contact Information
@@ -103,7 +97,6 @@
         </div>
       </div>
 
-      <!-- Student Details Section -->
       <div id="studentSection" class="space-y-4">
         <div>
           <h2 class="text-sm font-serif font-bold text-brand-dark flex items-center gap-2">
@@ -112,10 +105,8 @@
           <p class="text-xs text-gray-500 mt-0.5">Register each child who needs tutoring. Click "Add Another Child" for additional students.</p>
         </div>
 
-        <!-- Dynamic Students Container -->
         <div id="studentsContainer" class="space-y-4">
           
-          <!-- Student Card 1 -->
           <div class="student-card bg-brand-goldLight border border-brand-goldBorder rounded-xl p-4 space-y-4 relative">
             <div class="flex justify-between items-center">
               <span class="font-serif font-bold text-brand-crimson text-sm student-title">Student 1</span>
@@ -166,13 +157,11 @@
 
         </div>
 
-        <!-- Add Child Button -->
         <button type="button" id="addChildBtn" class="w-full py-2.5 bg-brand-goldLight border border-brand-gold font-bold text-brand-crimson text-xs rounded-lg hover:bg-amber-100/60 transition duration-150 flex items-center justify-center gap-1">
           <span>+</span> Add Another Child
         </button>
       </div>
 
-      <!-- Submit Button -->
       <button type="submit" class="w-full py-3 bg-brand-crimson text-white font-serif font-bold text-sm tracking-wider uppercase rounded-lg hover:bg-red-900 shadow-md transition duration-150 mt-4">
         Submit Registration
       </button>
@@ -180,13 +169,11 @@
     </form>
   </div>
 
-  <!-- Footer Info -->
   <footer class="mt-6 text-center text-xs text-gray-500 space-y-1">
     <p class="font-medium text-gray-600">New Mt. Moriah Missionary Baptist Church | 5798 Englewood Lane, Calera, AL 35040</p>
     <p>Phone: (205) 690-8533 | Email: scholars@newmtmoriahmbc.org</p>
   </footer>
 
-  <!-- Script Logic -->
   <script>
     let studentCount = 1;
 
